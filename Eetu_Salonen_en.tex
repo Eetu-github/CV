@@ -1,0 +1,133 @@
+
+\documentclass[a4paper,10pt]{article}
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[sfdefault]{roboto}
+\usepackage[a4paper,margin=1.55cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% --- General formatting ---
+\definecolor{accent}{HTML}{203B5C}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\raggedright
+\urlstyle{same}
+
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\setlist[itemize]{
+  leftmargin=1.25em,
+  itemsep=1pt,
+  topsep=2pt,
+  parsep=0pt
+}
+
+% --- CV commands ---
+\newcommand{\cvItem}[1]{\item \small{#1}}
+\newcommand{\cvSubheading}[4]{%
+  \textbf{#1}\hfill {\small #2}\\
+  \textit{\small #3}\hfill \textit{\small #4}\\[-3pt]
+}
+\newcommand{\cvProject}[3]{%
+  \textbf{#1}\hfill {\small #2}\\
+  \textit{\small #3}\\[-3pt]
+}
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+  {\Huge\bfseries Eetu Salonen}\\[4pt]
+  {\small Kuopio, Finland \;|\;
+  \href{tel:+358451381238}{+358 45 138 1238} \;|\;
+  \href{mailto:eetu.salonen01@gmail.com}{eetu.salonen01@gmail.com}}\\[2pt]
+  {\small
+  \href{https://www.linkedin.com/}{LinkedIn profile} \;|\;
+  \href{https://github.com/}{GitHub profile}}
+\end{center}
+
+% --- Profile ---
+\section*{Profile}
+Bachelor's student in Computer Science at the University of Eastern Finland,
+with minor studies in Data Science and Business. Interested in software
+development, data-driven solutions and practical problem-solving. Looking for
+a junior or trainee position where I can apply my technical skills, learn from
+experienced colleagues and develop as an IT professional.
+
+% --- Skills ---
+\section*{Technical Skills}
+\small
+\textbf{Programming:} Java, Python, JavaScript, R, SQL\\
+\textbf{Web development:} React, HTML, CSS, Node.js\\
+\textbf{Databases:} MySQL\\
+\textbf{Tools and platforms:} Git, GitHub, VS Code, IntelliJ IDEA, Webots
+\normalsize
+
+% --- Projects ---
+\section*{Projects}
+
+\cvProject{Mobile Robotics Project}{University group project}{Python, Webots}
+\begin{itemize}
+  \cvItem{Worked on an e-puck robot project in a simulated environment using Webots.}
+  \cvItem{Implemented and tuned line-following behaviour using infrared sensors and motor control.}
+  \cvItem{Collaborated with a small team using GitHub for version control and Discord for communication.}
+\end{itemize}
+
+\cvProject{Gym Tracking Application}{Personal / study project}{React, JavaScript, Node.js}
+\begin{itemize}
+  \cvItem{Worked on a web application for tracking gym training.}
+  \cvItem{Used a JavaScript-based frontend and Node.js development environment.}
+\end{itemize}
+
+% --- Experience ---
+\section*{Work Experience}
+
+\cvSubheading{Restaurant Team Member}{Oct 2022 -- Aug 2024}{Kotipizza Oy}{Kuopio, Finland}
+\begin{itemize}
+  \cvItem{Handled a variety of restaurant operations in a customer-facing team environment.}
+  \cvItem{Worked full-time from October 2022 to August 2023 before beginning university studies, and during summer 2024.}
+\end{itemize}
+
+\cvSubheading{Warehouse Worker}{Jan 2022 -- Sep 2022}{Inex Partners Oy}{Finland}
+\begin{itemize}
+  \cvItem{Worked in warehouse operations as an order picker.}
+\end{itemize}
+
+\cvSubheading{Warehouse Worker}{Jun 2017 -- Aug 2019; Mar 2020 -- Dec 2020}{Würth Oy}{Finland}
+\begin{itemize}
+  \cvItem{Worked in warehouse receiving, including unloading incoming deliveries and operating a forklift.}
+  \cvItem{Also worked in packing during summer periods.}
+\end{itemize}
+
+% --- Education ---
+\section*{Education}
+
+\cvSubheading{University of Eastern Finland}{2023 -- Present}{Bachelor's studies in Computer Science}{Kuopio, Finland}
+\small Minor studies: Data Science and Business.\\
+Expected graduation: 2027.
+\normalsize
+
+\cvSubheading{Riihimäki Upper Secondary School}{2017 -- 2020}{Finnish Matriculation Examination}{Riihimäki, Finland}
+
+% --- Additional information ---
+\section*{Additional Information}
+\small
+\textbf{Languages:} Finnish (native), English (fluent)\\
+\textbf{Other:} Category B driving licence, hygiene passport\\
+\textbf{Military service:} Completed in 2021; Corporal
+\normalsize
+
+\end{document}
